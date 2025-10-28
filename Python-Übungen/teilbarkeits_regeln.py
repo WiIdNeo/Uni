@@ -32,7 +32,7 @@ def teilbar_durch_7(x):
         letzte = z % 10
         rest = z // 10
         z = rest - 2 * letzte
-    if z == 0 or z == 7 or z == -7:
+    if z == 0 or z == 7:
         return True
     else:
         return False
