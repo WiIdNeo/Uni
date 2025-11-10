@@ -144,7 +144,7 @@ for row in cursor.fetchall():
 # ------------------------------------------------------------
 # 12. Aufräumen
 # ------------------------------------------------------------
-cursor.execute("DROP DATABASE Beispiel")
+#cursor.execute("DROP DATABASE Beispiel")
 cursor.close()
 conn.close()
 
