@@ -9,8 +9,8 @@ def move_button():
     new_y = random.randint(0, 650)
     button.place(x=new_x, y=new_y)
 
-    elapsed = time.time() - start_time
-    lab.config(text=f"Time: {elapsed:.2f} s    Buttons clicked: {counter}    Buttons per Time: {counter/elapsed:.2f}")
+    needed_time = time.time() - start_time
+    lab.config(text=f"Time: {needed_time:.2f} s    Buttons clicked: {counter}    Buttons per Time: {counter/needed_time:.2f}")
 
 start_time = time.time()
 counter = 0
