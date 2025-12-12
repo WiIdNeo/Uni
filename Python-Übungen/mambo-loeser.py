@@ -23,6 +23,9 @@ def get_grid():
                 grid.append(row)
                 break
     return grid
+
+
+
     
 def solve_grid():
     # Leere Zellen in Kandidatenlisten umwandeln
@@ -52,11 +55,19 @@ def solve_grid():
     return grid
 
 
+
+
 def guess_solve():
     ...
     
+    
+    
+    
 def check_grid():
     ...
+
+
+
 
 def print_grid(grid):
     for i, row in enumerate(grid):

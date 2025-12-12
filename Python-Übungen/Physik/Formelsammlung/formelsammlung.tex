@@ -1,0 +1,192 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{setspace}
+
+\geometry{margin=2cm}
+\setstretch{1.2}
+
+% Box für Hinweise
+\newtcolorbox{note}{
+  colback=gray!10,
+  colframe=gray!60,
+  sharp corners,
+  boxrule=0.5pt,
+  left=6pt,right=6pt,top=6pt,bottom=6pt
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Formelsammlung – Physik}}\\[4mm]
+    Aktualisierte und korrigierte Version
+\end{center}
+
+\section{Kreisbewegung mit konstanter Winkelbeschleunigung}
+
+\[
+\alpha = \frac{\Delta \omega}{\Delta t}
+\]
+\[
+\omega(t) = \omega_0 + \alpha t
+\]
+\[
+v = \omega r
+\]
+\[
+\Delta\varphi = \omega_0 t + \frac{1}{2}\alpha t^2
+\]
+\[
+\varphi_{\text{end}} = \varphi_{\text{start}} + \Delta\varphi
+\]
+
+\begin{note}
+Die Angabe $\omega_0 = -\alpha t$ ist nicht allgemein gültig.  
+Die Standardform lautet: $\omega(t)=\omega_0+\alpha t$.
+\end{note}
+
+% ------------------------------------------------------------
+
+\section{Zwei-Massen-System auf schiefer Ebene}
+
+Kräfte auf Masse $m_1$:
+\[
+F_g = m_1 g \sin\alpha,\qquad
+F_r = \mu m_1 g \cos\alpha
+\]
+
+Kräfte auf Masse $m_2$:
+\[
+F_g = m_2 g
+\]
+
+Bewegungsgleichung:
+\[
+m_2 g - (m_1 g \sin\alpha + \mu m_1 g \cos\alpha)
+= (m_1 + m_2)a
+\]
+
+Beschleunigung:
+\[
+a = \frac{m_2 g - m_1 g (\sin\alpha + \mu \cos\alpha)}{m_1 + m_2}
+\]
+
+\begin{note}
+Gültig bei masselosem, reibungsfreiem Seil sowie masseloser Rolle.  
+Haftreibung separat prüfen.
+\end{note}
+
+% ------------------------------------------------------------
+
+\section{Feder-Masse-System mit Dämpfung}
+
+\[
+k = \frac{F}{\Delta x}
+\]
+\[
+\omega_0 = \sqrt{\frac{k}{m}}
+\]
+\[
+\omega_d = 2\pi f_d
+\]
+
+Viskose Dämpfung:
+\[
+\omega_d = \sqrt{\omega_0^2 - \left(\frac{c}{2m}\right)^2}
+\]
+
+\begin{note}
+$\delta = \sqrt{\omega_0^2 - \omega_d^2}$ ist korrekt, wenn $\delta = \frac{c}{2m}$.  
+Gängige Literatur verwendet das Dämpfungsverhältnis  
+\[
+\zeta = \frac{c}{2\sqrt{mk}}.
+\]
+\end{note}
+
+% ------------------------------------------------------------
+
+\section{Proton im elektrischen Feld}
+
+\subsection*{Beschleunigung durch Spannung}
+\[
+v_x = \sqrt{\frac{2 q U_B}{m}}
+\]
+
+\subsection*{Flugzeit im Kondensator}
+\[
+t = \frac{L}{v_x}
+\]
+
+\subsection*{Ablenkung im Feld}
+\[
+a_y = \frac{qE}{m},\qquad
+v_y = a_y t,\qquad
+y = \frac{1}{2} a_y t^2
+\]
+
+\begin{note}
+Gültig im nicht-relativistischen Bereich.  
+Bei hohen Spannungen relativistische Effekte berücksichtigen.
+\end{note}
+
+% ------------------------------------------------------------
+
+\section{Elektromagnetische Welle}
+
+Zusammenhang der Felder:
+\[
+H = \frac{E}{Z}
+\]
+
+Intensität (RMS-Werte):
+\[
+I = \frac{E_{\text{eff}}^2}{Z}
+\]
+
+\begin{note}
+Für Spitzenwerte gilt:
+\[
+I = \frac{E_{\text{peak}}^2}{2Z}.
+\]
+Elektromagnetische Wellen sind transversal.
+\end{note}
+
+% ------------------------------------------------------------
+
+\section{Dipol und Wellenausbreitung}
+
+Im Vakuum:
+\[
+\lambda = \frac{c}{f},\qquad
+T = \frac{1}{f},\qquad
+l = \frac{\lambda}{2}
+\]
+
+Im Medium:
+\[
+v = \frac{c}{\sqrt{\varepsilon_r}}
+\]
+\[
+\lambda' = \frac{v}{f}
+\]
+\[
+l' = \frac{\lambda'}{2}
+\]
+
+\begin{note}
+Die Frequenz bleibt beim Eintritt in ein Medium unverändert.  
+Nur die Wellenlänge ändert sich.
+\end{note}
+
+% ------------------------------------------------------------
+
+\begin{center}
+\rule{0.8\textwidth}{0.4pt}\\[3pt]
+\textit{Ende der Formelsammlung}
+\end{center}
+
+\end{document}
