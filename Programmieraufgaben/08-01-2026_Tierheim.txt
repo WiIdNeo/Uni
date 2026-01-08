@@ -1,0 +1,38 @@
+Da wir nun in der Praxisphase relativ schnell in die objektorientiere Programmierung (OOP) werden hineinkommen müssen,
+oder selbst wenn nicht ein kleiner Vorsprung fürs kommende Theoriesemester nicht zu verachten sein wird,
+werden die zukünftigen Aufgaben etwas in Richtung OOP gehen.
+Dabei werde ich für die Grundaufgabe keine Vererbung vorsehen, das wird eher mal Thema in den Fortgeschrittenen Aufgaben.
+Wenn ihr gerade eine neue Sprache lernt (wie ich), könnt ihr ja auf die älteren Aufgaben zugreifen.
+Ich denke mal nicht, dass ich sie hier hochladen werde, außer mir wird langweilig.
+Ansonsten lade ich die Aufgaben während der Praxisphase hier hoch, weil das bestimmt komisch kommt, 
+wenn ich nicht am PC, sondern am Handy auf DC bin
+
+
+Nun zur Aufgabe:
+Wir Programmieren ein Tierheim oder einen Bauernhofsimulator oder wie auch immer ihr das nennen wollt.
+Ihr habt also verschiedene Tierarten und erhaltet von außerhalb immer mal Tiere dieser Tierarten (Objekt einer Klasse erstellen)
+Dann gibt es natürlich auch die Möglichkeit, dass ein Tier aus dem Tierheim abgeholt oder vom Hof verkauft wird, 
+aber da es in den wenigsten Sprachen eine Möglichkeit gibt, eine Klasse geziehlt zu löschen, müsst ihr das anderweitig handhaben.
+Solange ein Tier in eurem Tierheim oder auf eurem Hof ist hat das aber so extravagente bedürfnisse, wie Fressen, Trinken ect 
+(natürlich sehr einfach, wenn man einen Hof mit Freilandhaltung hat, aber ganz ehrlich, wer zieht der Massenkompression schon Tierwohl vor lol)
+Was naürlich auch geht, ist, dass die Zeit, bis das Tier wieder gefüttert werden will langsamer vergeht, aber das ist eure Sache.
+
+Diese ganzen bedürfnisse, sollt ihr über eingaben verwalten, also "Hund füttern" setzt den hunger-Timer zurück oder so ähnlich
+Auch soll es eine Funktion geben, die alle Objekte oder nur die einer bestimmten Art auflistet, wie ihr das macht, bleibt euch überlassen
+
+Erweiterte Aufgabe:
+Damit ihr nicht für jedes Objekt immer wieder die gleichen Bedürfnisse festlegen braucht, wie Essen oder Trinken, dann könnt ihr eine
+Parentclass (auch superclass genennt) Tier festlegen und den unterclassen wie hund diese dinge weitervererben.
+
+
+
+
+Allgemein bei Fragen meldet euch im Discord und schreibt mir gern, was ihr von der Aufgabe haltet, bzw ob das Niveau so gut ist.
+Und natürlich könnt ihr das projekt biliebig erweitern. Möglichkeiten, die mir einfallen sind:
+- Zufällig auslösende Events (Tier kommt dazu, wird abgeholt)
+- Wird krank/gesund
+da ist der Kreativität keine Grenze gesetzt.
+
+
+
+

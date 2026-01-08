@@ -1,2 +1,5 @@
 .vscode
 *.exe
+*.csproj
+obj/
+*.pdf
