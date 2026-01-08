@@ -1,0 +1,2 @@
+Wir haben ja schoneinmal ein Kalenderprogramm geschrieben. Darauf würde ich einfach mal verweisen und falls ihr das nicht mit Objekten gemacht habt,
+ist das auch eine Gute Übung!
