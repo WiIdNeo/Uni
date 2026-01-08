@@ -1,0 +1,31 @@
+Ich habe gerade die Tierheim/Bauernhofaufgabe komplett fertig gemcht (~3h) bearbeitungszeit und habe gemerkt, dass die Aufgabe wohl etwas zu hoch gegriffen ist, um mit OOP zu starten. 
+Darum kommt hier eine einfachere Aufgabe. Auch diese kann vollständig in der Konsole gelöst werden, aber auch ein GUI ist möglich.
+Es geht darum ein Koordinatensystem zu bauen auf dem man Punkte Geraden oder einfachce Geometrische Formen zeichnen kann.
+
+Ihr baut ein Koordinatensystem, dass nur Quadrant A/1 zeigt (oben rechts)
+Es könnte so aussehen. 
+9 ° ° ° ° ° ° ° ° °
+8 ° ° ° ° ° ° ° ° °
+7 ° ° ° ° * * * * °
+6 ° ° ° ° * * * * °
+5 ° ° ° ° * * * * °
+4 ° ° ° ° * * * * °
+3 ° ° ° ° ° ° ° ° °
+2 ° ° ° ° ° ° ° ° °
+1 ° ° ° ° ° ° ° ° °
+0 1 2 3 4 5 6 7 8 9
+
+Hier sieht man das viereck jetzt schlecht, aber man ist ja frei in der zeichenwahl
+
+Erstellt dazu ein Objekt pro Form und erinnert euch daran, wie sich die Formen/Objekte mathematisch definieren:
+Punkt: x, y-Koordinaten
+Gerade: Punkt und Richtungsvektor oder steigung
+Vereck: Punkt und Ausbreitung in x, y-Richtung
+
+
+Die eigentliche Herausforderung liegt darin, die Onjekte ins Koordinatensystem zu zeichnen, da man mit den Zahlen snappen muss.
+Dafür gibt es aber verschiedene Rundungssysteme, die man selber implementiern kann oder die man bestimmt in irgendwelchen Biblioteken findet.
+
+Wie immer Fragen im Discord, ansonsten viel Spaß und auch hier gern Feedback!
+
+
