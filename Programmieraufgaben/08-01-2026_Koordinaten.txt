@@ -1,4 +1,4 @@
-Ich habe gerade die Tierheim/Bauernhofaufgabe komplett fertig gemcht (~3h) bearbeitungszeit und habe gemerkt, dass die Aufgabe wohl etwas zu hoch gegriffen ist, um mit OOP zu starten. 
+Ich habe gerade die Tierheim/Bauernhofaufgabe komplett fertig gemcht (~3h bearbeitungszeit in C#, also 1-2 in python) und habe gemerkt, dass die Aufgabe wohl etwas zu hoch gegriffen ist, um mit OOP zu starten. 
 Darum kommt hier eine einfachere Aufgabe. Auch diese kann vollständig in der Konsole gelöst werden, aber auch ein GUI ist möglich.
 Es geht darum ein Koordinatensystem zu bauen auf dem man Punkte Geraden oder einfachce Geometrische Formen zeichnen kann.
 
