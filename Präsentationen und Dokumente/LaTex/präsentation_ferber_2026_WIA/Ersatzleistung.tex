@@ -1,0 +1,188 @@
+\documentclass[aspectratio=43]{beamer}
+
+% ---------------------------------------------------------
+% PAKETE
+% ---------------------------------------------------------
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% ---------------------------------------------------------
+% FARBEN
+% ---------------------------------------------------------
+\definecolor{mygreen}{RGB}{14,127,38}
+\definecolor{lightgraybg}{RGB}{217,217,217}
+
+% ---------------------------------------------------------
+% BEAMER-GRUNDLAGEN
+% ---------------------------------------------------------
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{headlinebox}{bg=white, fg=black}
+\setbeamercolor{footlinebox}{bg=white, fg=black}
+\setbeamercolor{frametitle}{fg=mygreen}
+\setbeamercolor{normal text}{fg=black}
+
+% ---------------------------------------------------------
+% KOPFZEILE (LOGO)
+% ---------------------------------------------------------
+\setbeamertemplate{headline}{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm,dp=0cm]{headlinebox}
+    \vspace{0.15cm}
+    \hfill
+    \raisebox{-0.2cm}{\includegraphics[height=1cm]{logo.png}}
+    \hspace{0.3cm}
+
+    {\color{mygreen}\rule{\paperwidth}{2pt}}
+  \end{beamercolorbox}
+}
+
+% ---------------------------------------------------------
+% FUSSZEILE (KORRIGIERT)
+% ---------------------------------------------------------
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.6cm,dp=0.1cm]{footlinebox}
+    \vspace{-0.1cm}
+    \hspace{0.3cm}\insertshorttitle
+    \hfill\insertframenumber\hspace{0.3cm}
+  \end{beamercolorbox}
+}
+
+% ---------------------------------------------------------
+% HINTERGRUND
+% ---------------------------------------------------------
+\setbeamertemplate{background}{
+  {\color{lightgraybg}\rule{\paperwidth}{\paperheight}}
+}
+
+% ---------------------------------------------------------
+% TITELINFOS
+% ---------------------------------------------------------
+\title{Vorstellung: Firma, Bereich und Tätigkeit}
+\author{Colin Hanschmann}
+\date{\today}
+
+% ---------------------------------------------------------
+% DOKUMENT
+% ---------------------------------------------------------
+\begin{document}
+
+% ---------------------------------------------------------
+% ERSTE FOLIE: NUR BILD (OHNE HEADER / FOOTER)
+% ---------------------------------------------------------
+{
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{background}{}
+
+\begin{frame}[plain]
+  \includegraphics[width=\paperwidth,height=\paperheight]{top_frame.png}
+\end{frame}
+}
+
+% ---------------------------------------------------------
+% TITELFOLIE
+% ---------------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ---------------------------------------------------------
+% G.E.O.S.
+% ---------------------------------------------------------
+\begin{frame}
+\frametitle{G.E.O.S. – Überblick}
+
+\begin{itemize}
+  \item International tätiges Ingenieurunternehmen mit fast 150 Jahren Geschichte
+  \item Schwerpunkte:
+  \begin{itemize}
+    \item Geotechnik
+    \item Rohstoffwirtschaft
+    \item Umwelt \& Sanierung
+    \item Energieinfrastruktur
+    \item Hydrogeologie
+    \item Geoinformatik
+    \item Strahlenschutz
+  \end{itemize}
+  \item Interdisziplinäre Teams und moderne digitale Methoden
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{G.E.O.S. – Kennzahlen}
+
+\begin{itemize}
+  \item 225 Spezialisten
+  \item 8 Standorte
+  \item Über 1.300 Kunden
+  \item Rund 500 Projekte pro Jahr
+  \item Kombination aus geowissenschaftlicher Expertise und Ingenieurtechnik
+\end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------
+% WISUTEC
+% ---------------------------------------------------------
+\begin{frame}
+\frametitle{WISUTEC – Profil}
+
+\begin{itemize}
+  \item Zweigniederlassung der G.E.O.S. in Chemnitz
+  \item Über 45 Jahre Erfahrung aus Uranerzbergbau und Wismut-Sanierung
+  \item Internationale Projekte und digitale Lösungen
+  \item Schwerpunkte:
+  \begin{itemize}
+    \item Bergbauschließung \& Sanierung
+    \item Geoinformatik
+    \item Strahlenschutz
+    \item Umweltmonitoring
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------
+% GEOINFORMATIK
+% ---------------------------------------------------------
+\begin{frame}
+\frametitle{Geoinformatik – Aufgaben}
+
+\begin{itemize}
+  \item Erfassung, Verarbeitung und Analyse räumlicher Daten
+  \item Typische Datenquellen:
+  \begin{itemize}
+    \item Geologische Messdaten
+    \item Monitoring-Daten
+    \item Fernerkundung / Satellitendaten
+    \item 3D-Modelle
+  \end{itemize}
+  \item Visualisierung komplexer Zusammenhänge
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Geoinformatik – Bedeutung für WISUTEC}
+
+\begin{itemize}
+  \item Grundlage für Altbergbau- und Sanierungsprojekte
+  \item Präzise räumliche Modelle für Risikoanalysen
+  \item Unterstützung von Strahlenschutz und Umweltmonitoring
+  \item Digitale Planungsgrundlagen
+\end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------
+% ABSCHLUSS
+% ---------------------------------------------------------
+\begin{frame}
+\frametitle{Fragen?}
+
+{\Large Vielen Dank für Ihre Aufmerksamkeit!}
+
+\end{frame}
+
+\end{document}

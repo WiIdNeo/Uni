@@ -4,3 +4,14 @@
 obj/
 *.pdf
 bin/
+*.fake
+*.toc
+*.gz
+*.snm
+*.out
+*.nav
+*.log
+*.aux
+
+
+
