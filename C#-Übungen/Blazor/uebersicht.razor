@@ -1,0 +1,231 @@
+@page "/"
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
+
+
+<!-- ========================================================= -->
+<!--                      HEADER                               -->
+<!-- ========================================================= -->
+<header style="background:#eef; padding:20px; text-align:center;">
+    <h1>Willkommen auf der Startseite</h1>
+    <p>Diese Seite zeigt alle wichtigen Elemente für dynamische Webentwicklung in Blazor.</p>
+</header>
+
+<!-- ========================================================= -->
+<!--                      CONTAINER                             -->
+<!-- ========================================================= -->
+<div style="max-width:900px; margin:auto; padding:20px;">
+
+    <!-- ========================================================= -->
+    <!--                      TEXTBEREICHE                         -->
+    <!-- ========================================================= -->
+    <h2>Text & Formatierung</h2>
+
+    <p>Dies ist ein normaler Absatztext.</p>
+    <p style="text-align:right;">Rechts ausgerichteter Text</p> <!-- text-align:right = rechtsbündig -->
+    <p style="text-align:center;">Zentrierter Text</p>          <!-- text-align:center = zentriert -->
+
+    <hr />
+
+    <!-- ========================================================= -->
+    <!--                      BUTTONS                              -->
+    <!-- ========================================================= -->
+    <h2>Buttons</h2>
+
+    <button class="btn btn-primary" @onclick="IncrementCounter">
+        Klick mich
+    </button>
+    <!-- @onclick = Eventhandler für Button-Klick -->
+    <!-- class="btn btn-primary" = Bootstrap-Button-Style -->
+
+    <p>Button wurde @counter mal geklickt.</p>
+
+    <hr />
+
+    <!-- ========================================================= -->
+    <!--                      INPUTS                               -->
+    <!-- ========================================================= -->
+    <h2>Input-Felder</h2>
+
+    <input @bind="username" placeholder="Benutzername" class="form-control" />
+    <!-- @bind = Zwei-Wege-Datenbindung -->
+    <!-- placeholder = grauer Hinweistext -->
+    <!-- class="form-control" = Bootstrap-Style -->
+
+    <p>Aktueller Benutzername: @username</p>
+
+    <hr />
+
+    <!-- ========================================================= -->
+    <!--                      FORMULAR MIT VALIDIERUNG             -->
+    <!-- ========================================================= -->
+    <h2>Formular mit Validierung</h2>
+
+    <EditForm Model="@formModel" OnValidSubmit="HandleValidSubmit">
+        <!-- EditForm = Blazor-Komponente für Formulare -->
+        <!-- Model = Objekt, das gebunden wird -->
+        <!-- OnValidSubmit = Event, wenn Validierung erfolgreich -->
+
+        <@using DataAnnotationsValidator />
+        <!-- Aktiviert Validierung über [Required], [EmailAddress], etc. -->
+
+        <@using ValidationSummary />
+        <!-- Zeigt alle Validierungsfehler an -->
+
+        <div class="mb-3">
+            <label>Name:</label>
+            <@using InputText @bind-Value="formModel.Name" class="form-control" />
+            <!-- InputText = Blazor-Komponente für Textfelder -->
+        </div>
+
+        <div class="mb-3">
+            <label>Email:</label>
+            <@using InputText @bind-Value="formModel.Email" class="form-control" />
+        </div>
+
+        <button class="btn btn-success">Absenden</button>
+    </EditForm>
+
+    @if (formSubmitted)
+    {
+        <p style="color:green;">Formular erfolgreich abgeschickt!</p>
+    }
+
+    <hr />
+
+    <!-- ========================================================= -->
+    <!--                      BILD                                 -->
+    <!-- ========================================================= -->
+    <h2>Bild</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/640px-PNG_transparency_demonstration_1.png"
+         alt="Beispielbild"
+         style="max-width:300px; border:1px solid #ccc;" />
+    <!-- src = Bildquelle -->
+    <!-- alt = Alternativtext -->
+    <!-- style = CSS für Größe und Rahmen -->
+
+    <hr />
+
+    <!-- ========================================================= -->
+    <!--                      TABELLE                              -->
+    <!-- ========================================================= -->
+    <h2>Tabelle</h2>
+
+    <table class="table table-striped">
+        <!-- class="table table-striped" = Bootstrap-Tabellenstil -->
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in items)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <hr />
+
+    <!-- ========================================================= -->
+    <!--                      DYNAMISCHER BEREICH                  -->
+    <!-- ========================================================= -->
+    <h2>Dynamischer Bereich</h2>
+
+    <button class="btn btn-info" @onclick="ToggleBox">
+        Box anzeigen/ausblenden
+    </button>
+
+    @if (showBox)
+    {
+        <div style="padding:20px; background:#def; margin-top:10px;">
+            <p>Dies ist ein dynamisch ein- und ausblendbarer Bereich.</p>
+        </div>
+    }
+
+    <hr />
+
+    <!-- ========================================================= -->
+    <!--                      KOMPONENTENBEISPIEL                  -->
+    <!-- ========================================================= -->
+    <h2>Komponentenbeispiel</h2>
+
+    <@using SimpleCard Title="Beispielkarte" Text="Dies ist eine wiederverwendbare Komponente." />
+    <!-- Title = Parameter der Komponente -->
+    <!-- Text = Parameter der Komponente -->
+
+</div>
+
+<!-- ========================================================= -->
+<!--                      FOOTER                                -->
+<!-- ========================================================= -->
+<footer style="background:#eef; padding:20px; text-align:center; margin-top:40px;">
+    <p>&copy; 2026 – Dynamische Startseite</p>
+</footer>
+
+@code {
+    // ============================
+    // Button-Logik
+    // ============================
+    private int counter = 0;
+    private void IncrementCounter() => counter++;
+
+    // ============================
+    // Input-Feld
+    // ============================
+    private string username = "";
+
+    // ============================
+    // Formularmodell
+    // ============================
+    private FormModel formModel = new();
+    private bool formSubmitted = false;
+
+    private void HandleValidSubmit()
+    {
+        formSubmitted = true;
+    }
+
+    public class FormModel
+    {
+        [Required]                 // Pflichtfeld
+        public string Name { get; set; }
+
+        [Required]
+        [EmailAddress]             // Validiert Email-Format
+        public string Email { get; set; }
+    }
+
+    // ============================
+    // Tabelle
+    // ============================
+    private List<Item> items = new()
+    {
+        new Item { Id = 1, Name = "Apfel", Status = "Verfügbar" },
+        new Item { Id = 2, Name = "Birne", Status = "Ausverkauft" },
+        new Item { Id = 3, Name = "Kirsche", Status = "Verfügbar" }
+    };
+
+    public class Item
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Status { get; set; }
+    }
+
+    // ============================
+    // Dynamischer Bereich
+    // ============================
+    private bool showBox = false;
+    private void ToggleBox() => showBox = !showBox;
+}
