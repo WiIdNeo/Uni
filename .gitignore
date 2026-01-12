@@ -12,6 +12,9 @@ bin/
 *.nav
 *.log
 *.aux
+*.user
+*.suo
+launch.json
 
 
 
