@@ -16,6 +16,7 @@
 % BEAMER-GRUNDLAGEN
 % ---------------------------------------------------------
 \setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=0cm, text margin right=0cm}
 
 \setbeamercolor{headlinebox}{bg=white, fg=black}
 \setbeamercolor{footlinebox}{bg=white, fg=black}
@@ -23,27 +24,47 @@
 \setbeamercolor{normal text}{fg=black}
 
 % ---------------------------------------------------------
-% KOPFZEILE (LOGO)
+% SEMANTISCHES ÜBERTHEMA (VARIABEL)
+% ---------------------------------------------------------
+\newcommand{\overheader}{}
+
+\newcommand{\setoverheader}[1]{%
+  \renewcommand{\overheader}{#1}
+}
+
+% ---------------------------------------------------------
+% KOPFZEILE
 % ---------------------------------------------------------
 \setbeamertemplate{headline}{
   \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm,dp=0cm]{headlinebox}
-    \vspace{0.15cm}
-    \hfill
-    \raisebox{-0.2cm}{\includegraphics[height=1cm]{logo.png}}
-    \hspace{0.3cm}
+    \vspace{0.2cm}
+    \hbox to \paperwidth{
+      \hspace{0.4cm}
+      {\color{mygreen}\Large\textbf\overheader}
+      \hfill
+      \raisebox{-0.3cm}{\includegraphics[height=1cm]{logo.png}}
+      \hspace{0.4cm}
+    }
+    \vspace{-0.1cm}
 
     {\color{mygreen}\rule{\paperwidth}{2pt}}
   \end{beamercolorbox}
 }
 
 % ---------------------------------------------------------
-% FUSSZEILE (KORRIGIERT)
+% FUSSZEILE
 % ---------------------------------------------------------
 \setbeamertemplate{footline}{
-  \begin{beamercolorbox}[wd=\paperwidth,ht=0.6cm,dp=0.1cm]{footlinebox}
-    \vspace{-0.1cm}
-    \hspace{0.3cm}\insertshorttitle
-    \hfill\insertframenumber\hspace{0.3cm}
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.6cm,dp=0cm]{footlinebox}
+    \vbox to 0.6cm{
+      \vspace{0.1cm}
+      \hbox to \paperwidth{
+        \hspace{0.3cm}\insertshorttitle
+        \hfill
+        \insertframenumber\hspace{0.3cm}
+      }
+      \vfill
+    }
   \end{beamercolorbox}
 }
 
@@ -57,7 +78,7 @@
 % ---------------------------------------------------------
 % TITELINFOS
 % ---------------------------------------------------------
-\title{Vorstellung: Firma, Bereich und Tätigkeit}
+\title[Vorstellung]{Vorstellung: Firma, Bereich und Tätigkeit}
 \author{Colin Hanschmann}
 \date{\today}
 
@@ -67,7 +88,7 @@
 \begin{document}
 
 % ---------------------------------------------------------
-% ERSTE FOLIE: NUR BILD (OHNE HEADER / FOOTER)
+% ERSTE FOLIE: NUR BILD
 % ---------------------------------------------------------
 {
 \setbeamertemplate{headline}{}
@@ -75,22 +96,29 @@
 \setbeamertemplate{background}{}
 
 \begin{frame}[plain]
-  \includegraphics[width=\paperwidth,height=\paperheight]{top_frame.png}
+  \makebox[0pt][l]{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{top_frame.png}%
+  }
 \end{frame}
 }
 
 % ---------------------------------------------------------
 % TITELFOLIE
 % ---------------------------------------------------------
+\setoverheader{}
+
 \begin{frame}
   \titlepage
 \end{frame}
 
 % ---------------------------------------------------------
-% G.E.O.S.
+% UNTERNEHMEN
 % ---------------------------------------------------------
+\section{Unternehmen}
+\setoverheader{G.E.O.S. - Allgemein}
+
 \begin{frame}
-\frametitle{G.E.O.S. – Überblick}
+\frametitle{Überblick}
 
 \begin{itemize}
   \item International tätiges Ingenieurunternehmen mit fast 150 Jahren Geschichte
@@ -106,31 +134,31 @@
   \end{itemize}
   \item Interdisziplinäre Teams und moderne digitale Methoden
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}
-\frametitle{G.E.O.S. – Kennzahlen}
+\frametitle{Kennzahlen}
 
 \begin{itemize}
   \item 225 Spezialisten
   \item 8 Standorte
   \item Über 1.300 Kunden
   \item Rund 500 Projekte pro Jahr
-  \item Kombination aus geowissenschaftlicher Expertise und Ingenieurtechnik
 \end{itemize}
-
 \end{frame}
 
 % ---------------------------------------------------------
 % WISUTEC
 % ---------------------------------------------------------
+\section{Standort}
+\setoverheader{Standort Chemnitz}
+
 \begin{frame}
 \frametitle{WISUTEC – Profil}
 
 \begin{itemize}
   \item Zweigniederlassung der G.E.O.S. in Chemnitz
-  \item Über 45 Jahre Erfahrung aus Uranerzbergbau und Wismut-Sanierung
+  \item Über 45 Jahre Erfahrung
   \item Internationale Projekte und digitale Lösungen
   \item Schwerpunkte:
   \begin{itemize}
@@ -140,12 +168,14 @@
     \item Umweltmonitoring
   \end{itemize}
 \end{itemize}
-
 \end{frame}
 
 % ---------------------------------------------------------
 % GEOINFORMATIK
 % ---------------------------------------------------------
+\section{Fachbereich}
+\setoverheader{Fachbereich Geoinformatik}
+
 \begin{frame}
 \frametitle{Geoinformatik – Aufgaben}
 
@@ -155,34 +185,42 @@
   \begin{itemize}
     \item Geologische Messdaten
     \item Monitoring-Daten
-    \item Fernerkundung / Satellitendaten
+    \item Fernerkundung
     \item 3D-Modelle
   \end{itemize}
   \item Visualisierung komplexer Zusammenhänge
 \end{itemize}
-
 \end{frame}
 
+% ---------------------------------------------------------
+% PERSÖNLICHE AUFGABEN
+% ---------------------------------------------------------
+\section{Eigene Tätigkeit}
+\setoverheader{Eigene Tätigkeit}
+
 \begin{frame}
-\frametitle{Geoinformatik – Bedeutung für WISUTEC}
+\frametitle{Persönliche Aufgaben}
 
 \begin{itemize}
-  \item Grundlage für Altbergbau- und Sanierungsprojekte
-  \item Präzise räumliche Modelle für Risikoanalysen
-  \item Unterstützung von Strahlenschutz und Umweltmonitoring
-  \item Digitale Planungsgrundlagen
+  \item Einsatz von LLMs für interne und externe Prozesse
+  \item Schwerpunkte:
+  \begin{itemize}
+    \item Retrieval Augmented Generation
+    \item Datenaufbereitung
+    \item Lokale / interne LLMs
+  \end{itemize}
 \end{itemize}
-
 \end{frame}
 
 % ---------------------------------------------------------
 % ABSCHLUSS
 % ---------------------------------------------------------
+\setoverheader{Abschluss}
+
 \begin{frame}
-\frametitle{Fragen?}
-
+\begin{center}
 {\Large Vielen Dank für Ihre Aufmerksamkeit!}
-
+\end{center}
 \end{frame}
 
 \end{document}
