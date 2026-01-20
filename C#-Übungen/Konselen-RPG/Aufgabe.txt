@@ -1,0 +1,32 @@
+This learning task was written by MS Copilot. And is unsed to learn a secondary programing language. It contains many Problems like Random, Classes, Paranting and similar, but is also quite to the basics. 
+If you want to translate: it's german
+
+
+Titel: Aufgabenbeschreibung – Mini-RPG Konsolenprojekt
+
+1. Projektziel:
+- Entwicklung eines textbasierten Rollenspiels in C#.
+- Fokus auf Erlernen der Syntax, Objektorientierung, Vererbung und grundlegenden Programmstrukturen.
+
+2. Kernfunktionen:
+- Charaktererstellung mit Klassenwahl (Krieger, Magier, Schurke).
+- Feste Weltkarte mit vier Biomen: Grasland, Stadt, Wald, Strand.
+- Gegner pro Biom: Grasland (Banditen, Wildschweine, Wölfe), Stadt (Ratten, Straßendiebe, korrupte Wachen), Wald (Goblins, Waldspinnen, Waldgeister), Strand (Krabben, Möwen, Piratenlehrlinge).
+- Rundenbasiertes Kampfsystem mit Aktionen: Angriff, Verteidigen, Item nutzen, Fliehen.
+- Erfahrungssystem mit Level-Ups und Attributssteigerungen.
+- Inventarsystem mit Items wie Heiltränken und Buffs.
+
+3. Weltkarte:
+- Feste Struktur mit klaren Übergängen zwischen Biomen.
+- Zufällige Begegnungen innerhalb eines Bioms.
+- Orte wie Stadt, Wald, Strand und Grasland sind logisch verbunden.
+
+4. Erweiterungen (optional):
+- Shop-System mit Gold und Preisen.
+- Quests wie "Besiege 3 Goblins" oder "Finde ein seltenes Item".
+- Speichern und Laden über JSON-Dateien.
+
+5. Lernziele:
+- Anwendung von Klassen, Objekten, Vererbung und Polymorphie.
+- Nutzung von Listen, Enums, Schleifen und Random.
+- Strukturierung eines mittelgroßen Konsolenprojekts.

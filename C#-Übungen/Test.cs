@@ -1,6 +1,6 @@
 namespace test
 {
-    class Test()
+    class Test
     {
         static void Main(string []args)
         {
