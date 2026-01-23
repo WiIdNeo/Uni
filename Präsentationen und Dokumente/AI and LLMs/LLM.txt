@@ -1,0 +1,58 @@
+Large language Models 
+
+Working Process
+Like all AI LLMs aren't really smart, they just calculate wich action (in case of an LLM Word) is the most likely.
+As this is based on chances LLMs doesn't need to take a fitting word. And especially that doen't mean they tell truth. The most likely word doesn't need to be the truth.
+Also LLMs doesn't think or understand in human wise. They can't reflect themself or what they are telling, as all is just a mathematic form telling what word will follow. 
+This is keeping the risk of hallucination and repeating.
+
+Model types (training)
+- Base Models / Foundation Models
+Trained on a mass of data, but without focus on chats or dialogs. They often seam confused, as they write sigle words, unstructured texts or do unexpected changes on topic
+Actually they are really good in speach, they just don't have an real expression feature in human kind.
+They are often used as BASE to tune a LLm based on specific wants
+
+- Instruction-Tuned Models 
+Base Models tuned for instruction following. 
+They don't really have a chatting feature, but they 'understand' a task and give structured answers to solve the problem.
+SFT
+
+- Chat-Models
+Those are even further developed Instruction-Follow Models.
+They are tuned for chatting and representing an human. They often seam like heaving a personality, even if they not.
+Those Models learn from reaction and even are able to 'interpred' your behavior from your word choosage.
+
+
+Model types (archetecture)
+- Dense Models
+Every parameter of the Model is active for every query.
+This is classical Idea of OpenAi and other western start-ups.
+This archetecture is easy to train and the quality of answers is very consistent, but it is expensive and scales really bad.
+
+- Mixture of Experts (MoE)
+LMMs base on many experts (aspects) and only use those they need to answer the query.
+This archetecture was used to create DeepSeek for Example, but also new Chat-GPT models may transvert to that archetecture.
+This is mainly reducing cost of hardware and training, but as pay off they are complexer to train and it is possible the quality of answers can vary. 
+
+
+Agentic AI
+Newest Development on field of AI. They are ment to call Tools, to for example run and debug code automatic
+
+
+Modell Context Protocl (MPC)
+This Protocol makes it easier to analyse Real Time Data and call tools.
+
+
+Supervised Fine Tuning (SFT)
+Models now learn to give specific outputs based on inputs.
+This leads to possibillities like: "Explain like I'm five..."
+
+
+RLHF
+Models wich use MLE-Only only answer chance-based, without filtering for dangerous information or user's preferences.
+Based on human Feedback they adapt the word relations to deliver better texts.
+
+
+
+
+

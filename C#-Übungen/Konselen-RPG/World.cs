@@ -39,7 +39,17 @@ namespace ConsoleRPG
         }  
         static void getEvent(string x)
         {
+            encounters[0, 1] = 0.35;
+            encounters[1, 1] = 0.1;
+            encounters[2, 1] = 0.1;
+            encounters[3, 1] = 0.2;
+            encounters[4, 1] = 0.25;
+            encounters[5, 1] = 0.0;
             int y = Program.Rand(1, 100);
+            if (y > 7)
+            {
+                
+            }
         }
     }
 }
