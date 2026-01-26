@@ -1,0 +1,18 @@
+So kreativ bin, machen wir mal wieder ein paar kleine Spiele.
+Da ich keine Rückmeldung bekommen habe, denke ich, niemand hat irgendwas gemacht oder es war zu schwierig.
+Darum jetzt einen einfachen Spiele-Hub, wo man aus mehreren einfachen Spielen wählen kann.
+
+Es soll ein Menü geben, wo man das Spiel wählt.
+Dann wird halt das Spiel ausgeführt.
+
+Spieleideen sind:
+Zahlenraten
+Schere-Stein-Papier
+Hangman
+Black-Jack
+Ein Reaktionstest (vllt auf Zufallsbasis einen Text anzeigen und dann auf einen Input warten. Danach die Zeit anzeigen)
+
+Dann wäre ein Highscore-Speicher wieder gut und wem das alles zu einfach ist, kann sich mal an einer GUI versuchen.
+
+
+
