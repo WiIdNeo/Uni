@@ -9,11 +9,8 @@ namespace GameBox
             bool Correct = false;
             Console.WriteLine("Welcome to Guess the NUmber! \nYour task is to guess a random number in 5 Attempts. \nFirst select a difficulty:\n1) Easy\n2) Medium\n3) Hard\n");
             string y = Console.ReadLine();
-            int Num = RandNum(1, 
-            y == "1" 
-            ? 10 
-            : y=="2" 
-            ? 100 
+            int Num = RandNum(1, y == "1" ? 10 
+            : y=="2" ? 100 
             : 1000
             );
             for (int i = 0; i < 5 && !Correct; i++)
