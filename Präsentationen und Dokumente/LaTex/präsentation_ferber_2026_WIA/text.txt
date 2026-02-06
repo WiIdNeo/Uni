@@ -1,0 +1,51 @@
+Vorstellung
+- Vorstellung
+- Kurze Gliederung:
+    - Firma allgemein
+    - Standort Chemnitz
+    - Meine Abteilung: Geoinformatik
+    - Eigene Aufgaben
+Überblick
+- Internationale tätiges Ingenieursunternehmen mit 150 Jahren Geschichte
+- Themen:
+    - Geotechnik
+    - Rohstoffwirtschaft
+    - Energieinfrastruktur
+    - Hydrologie
+    - Strahlenschutz
+    - Bergbausanierung und Renaturierung
+    - Geoinformatik
+
+Kennzahlen:
+- 225 Spezialisten
+- 8 Standorte über Deutschland verteilt
+- 1.300 Kunden
+- rund 500 Projekte pro Jahr
+
+
+WISUTEC:
+- Standort Chemnitz
+- Setzt sich zusammen aus Geoinformatik und Bergbausanierung
+- Durch die Fachbereiche des Monitorings in Kombination mit Strahlenschutz und Bergbausanierung:
+    - Uranbergbausanierun gin Usbekistan und Kirgestan
+
+
+Fachbereich Geoinformatik
+- AL.VIS
+    - Karte
+        - Positionierung von Objekten (Messstellen - Deiche)
+        - Bilder
+    - Messwerte
+    - 3D-Modelle
+- Schulung und Installation
+
+Eigene Themen:
+- KI-Anwendungen
+    - Chat mit lokalem Modelle
+        - Frage nach Infomationen aus geheimen Dokumenten
+        - Hilfe beim Finden von Funktionen in AL.VIS
+    - Bildersuche
+
+
+
+
