@@ -15,7 +15,7 @@ bin/
 *.user
 *.suo
 launch.json
-
+privat/
 
 
 
