@@ -27,7 +27,7 @@ WISUTEC:
 - Standort Chemnitz
 - Setzt sich zusammen aus Geoinformatik und Bergbausanierung
 - Durch die Fachbereiche des Monitorings in Kombination mit Strahlenschutz und Bergbausanierung:
-    - Uranbergbausanierun gin Usbekistan und Kirgestan
+    - Uranbergbausanierung in Usbekistan und Kirgestan
 
 
 Fachbereich Geoinformatik
@@ -36,15 +36,17 @@ Fachbereich Geoinformatik
         - Positionierung von Objekten (Messstellen - Deiche)
         - Bilder
     - Messwerte
-    - 3D-Modelle
-- Schulung und Installation
+    - 3D-Modelle (Bildverweis)
+        - Bild zeigt Hangrutsch an der Neuseeländischen Küste:
+          Auf der linken Seite ein Drohnenbild auf der rechten Seite das 3D-Modell
+- Schulung an der Software sowie die Installation/Konfiguration der Software und Serverinfrastruktur
 
 Eigene Themen:
 - KI-Anwendungen
-    - Chat mit lokalem Modelle
-        - Frage nach Infomationen aus geheimen Dokumenten
-        - Hilfe beim Finden von Funktionen in AL.VIS
-    - Bildersuche
+    - lokale KI-Chatanwendung für sensible Daten
+    - Bildsuche mithilfe von CLIP
+        - Aproximiert die ähnlichkeit zweier Vektoren (Bild und Text)
+
 
 
 
