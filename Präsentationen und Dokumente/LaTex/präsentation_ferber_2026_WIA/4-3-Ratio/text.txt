@@ -8,13 +8,14 @@ Vorstellung
 Überblick
 - Internationale tätiges Ingenieursunternehmen mit 150 Jahren Geschichte
 - Themen:
-    - Geotechnik
-    - Rohstoffwirtschaft
-    - Energieinfrastruktur
-    - Hydrologie
-    - Strahlenschutz
-    - Bergbausanierung und Renaturierung
-    - Geoinformatik
+    ▶ Geotechnik
+    ▶ Rohstoffwirtschaft
+    ▶ Bergbausanierung
+    ▶ Infrastruktur
+    ▶ Genehmigungsmanagement
+    ▶ Hydrogeologie
+    ▶ Geoinformatik
+    ▶ Strahlenschutz
 
 Kennzahlen:
 - 225 Spezialisten
@@ -46,6 +47,10 @@ Eigene Themen:
     - lokale KI-Chatanwendung für sensible Daten
     - Bildsuche mithilfe von CLIP
         - Aproximiert die ähnlichkeit zweier Vektoren (Bild und Text)
+
+Vielen Dank für Ihre Aufmerksamkeit!
+
+
 
 
 
