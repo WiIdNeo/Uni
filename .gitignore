@@ -2,7 +2,6 @@
 *.exe
 *.csproj
 obj/
-*.pdf
 bin/
 *.fake
 *.toc
@@ -16,7 +15,4 @@ bin/
 *.suo
 launch.json
 privat/
-
-
-
 .fake
