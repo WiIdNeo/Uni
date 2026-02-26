@@ -21,9 +21,9 @@
 
 # 🟢 Leistungsfelder
 
-* Breites technisches Spektrum
+* Breites Spektrum
 * von Geoinformatik
-* über Infrastrukturplanung
+* über Infrastrukturprojekte
 * bis zu Umweltmonitoring
 * und Renaturierung
 
@@ -36,34 +36,37 @@
 * Industrieunternehmen, z. B. Tesla
 * Regionale Unternehmen, z. B. Lichtenauer Mineralquellen
 
+* Genau wie die größe variieren auch die Themen: 
+* Bergbau bis Lebensmittelproduktion
+
 ---
 
 # 🟢 Standort Chemnitz – WISUTEC
 
 * Zweigniederlassung der G.E.O.S.
-* Schwerpunktbereiche:
-
+* Schwerpunkte:
   * Bergbauschließung und -sanierung
   * Strahlenschutz
   * Geoinformatik
   * Umweltmonitoring
 * Internationale Projekte. z.B.:
-  * Renaturierung ehemaliger Uran-Tagebaue in Usbekistan und Kirgisistan
+  * Renaturierung ehemaliger Uran-Tagebauten in Usbekistan und Kirgisistan
 
 ---
 
 # 🟢 Fachbereich Geoinformatik
 
 * Entwicklung der Software-Suite AL.VIS
-* Plattform zur Datenvisualisierung
+* Plattform zur Datenvisualisierung und verknüpfung
     * Diagramme für Messwerte
     * Verortete Geometrien und Objekte auf einer Karte
+        * denen werden zum Beispeil Messwerte und Bilder zugeordnet
     * 3D-Modelle
         * Beispiel: 3D-Modell eines Hangrutsches an Neuseeländischer Küste
 * Anforderung: Hohe Flexibilität durch unterschiedliche Kundenanforderungen
 * Zusätzlich:
   * Installation der Software
-  * Serverinfrastruktur
+  * Einrichten der Serverinfrastruktur
   * Schulung der Anwender
 
 ---
@@ -71,38 +74,30 @@
 # 🟢 Eigener Aufgabenbereich – Überblick
 
 * Testen von KI-Systemen auf Tauglichkeit fürs Unternehmen
-* Integration in bestehende Prozesse
-Themen:
-  * Lokale LLMs mit RAG
-  * Fokus auf Datensicherheit und Praxistauglichkeit
-  * KI-gestützte Bildersuche mit CLIP
-
----
-
-# 🟢 Lokale LLMs mit RAG
-* RAG – Retrieval Augmented Generation:
-    * Reduzierung von Halluzinationen
-    * Zitierfähigkeit von Quellen
-    * Besonders relevant im rechtlichen Kontext
-* Einsatz lokaler Sprachmodelle
-* Vorteil: Daten verlassen das Unternehmen nicht
-* Hohe Datensicherheit
-
-* Mögliche Anwendung:
-  * Unterstützung im Genehmigungsmanagement
-  * Schnellere Suche nach Normen und Gesetzen
-  * Unterstützung bei der Programmierarbeit
+* aktuelle Themen:
+   * Lokale LLMs
+   * KI-gestützte Bildersuche mit CLIP
 
 ---
 
 # 🟢 Screenshot – LLM-Chat
 
-* Klassische Chat-Oberfläche
-* Aktuell noch ohne RAG-Anbindung
-* Testumgebung zur Evaluierung
-* Vergleichbar mit bekannten Cloud-LLMs
-* Ziel: spätere Integration in interne Systeme
 
+* Klassische Chat-Oberfläche
+* Vergleichbar mit bekannten Cloud-LLMs
+* allerdings offline bzw auf Unternehmensinternem-Server
+    * Daten bleiben im Unternehmen
+
+Ziel:
+* RAG – Retrieval Augmented Generation:
+    * Kontextspezifische Wissensbasis
+    * Reduzierung von Halluzinationen
+    * Besonders relevant im rechtlichen Kontext
+
+* Mögliche Anwendung:
+  * Unterstützung im Genehmigungsmanagement
+  * Schnellere Suche nach Normen und Gesetzen
+  * Unterstützung bei der Programmierarbeit
 ---
 
 # 🟢 Projekt 2 – Bildsuche mit CLIP
@@ -112,39 +107,23 @@ Themen:
 * Umwandlung von Bildern in mathematische Vektoren
 * Umwandlung von Suchbegriffen ebenfalls in Vektoren
 * Ähnlichkeitssuche im Vektorraum
-* Ausgabe der Top-10 passendsten Bilder
 
 Beispiel:
-
 * Suchbegriff: „Talsperre“
 * Top-Treffer korrekt erkannt
 
+* Herausforderungen:
+    * Bildnormalisierung erzeugt Verzerrung
+    * Fehlklassifikationen möglich
+    * Beispiel: Gans wird auf Hundebild erkannt
+    * Auseinandersetzung mit:
+        * Trainingsdaten
+        * Modellarchitektur
+        * Fine-Tuning
 
-* Interne Liste mit ca. 600 Begriffen
-* Modell prüft für jeden Begriff:
-  * Ist dieses Objekt im Bild enthalten?
-
-* Ausgabe der erkannten Objekte
-* Beispiel-Erkennung:
-  * Staumauer
-  * Wasserkraftwerk
-  * Gewichtsmauer
-  * Staumauerkrone
-  * Bogenstaumauer
-
----
-
-# 🟢 Herausforderungen
-
-* Bildnormalisierung erzeugt Verzerrung
-* Fehlklassifikationen möglich
-   * Beispiel: Gans wird auf Hundebild erkannt
-* Auseinandersetzung mit:
-   * Trainingsdaten
-   * Modellarchitektur
-   * Fine-Tuning
-* Ziel: Anpassung an fachspezifische Anwendungsbereiche
-
+* Anwendungsbereiche:
+    * Datenmirgration
+    
 ---
 
 # 🟢 Abschluss
