@@ -1,0 +1,154 @@
+# 🟢 Titelfolie
+
+* Begrüßung
+* Ausbildungsbetrieb: G.E.O.S. / WISUTEC
+* Fachbereich: Geoinformatik
+
+---
+
+# 🟢 Unternehmen – G.E.O.S.
+
+* Gründung in heutiger Form 1990
+* Unternehmensgeschichte reicht bis in 1870er Jahre
+* Mittelständisches Ingenieurunternehmen
+* ca. 225 Mitarbeitende
+* Jahresumsatz ca. 35 Mio. Euro
+* 9 Standorte in Deutschland
+* Hauptsitz in Freiberg
+* mein Arbeitsplatz: Standort Chemnitz: WISUTEC 
+
+---
+
+# 🟢 Leistungsfelder
+
+* Breites technisches Spektrum
+* von Geoinformatik
+* über Infrastrukturplanung
+* bis zu Umweltmonitoring
+* und Renaturierung
+
+---
+
+# 🟢 Kunden
+
+* Über 1300 Kunden
+* Öffentliche Auftraggeber (Ministerien, Länder)
+* Industrieunternehmen, z. B. Tesla
+* Regionale Unternehmen, z. B. Lichtenauer Mineralquellen
+
+---
+
+# 🟢 Standort Chemnitz – WISUTEC
+
+* Zweigniederlassung der G.E.O.S.
+* Schwerpunktbereiche:
+
+  * Bergbauschließung und -sanierung
+  * Strahlenschutz
+  * Geoinformatik
+  * Umweltmonitoring
+* Internationale Projekte. z.B.:
+  * Renaturierung ehemaliger Uran-Tagebaue in Usbekistan und Kirgisistan
+
+---
+
+# 🟢 Fachbereich Geoinformatik
+
+* Entwicklung der Software-Suite AL.VIS
+* Plattform zur Datenvisualisierung
+    * Diagramme für Messwerte
+    * Verortete Geometrien und Objekte auf einer Karte
+    * 3D-Modelle
+        * Beispiel: 3D-Modell eines Hangrutsches an Neuseeländischer Küste
+* Anforderung: Hohe Flexibilität durch unterschiedliche Kundenanforderungen
+* Zusätzlich:
+  * Installation der Software
+  * Serverinfrastruktur
+  * Schulung der Anwender
+
+---
+
+# 🟢 Eigener Aufgabenbereich – Überblick
+
+* Testen von KI-Systemen auf Tauglichkeit fürs Unternehmen
+* Integration in bestehende Prozesse
+Themen:
+  * Lokale LLMs mit RAG
+  * Fokus auf Datensicherheit und Praxistauglichkeit
+  * KI-gestützte Bildersuche mit CLIP
+
+---
+
+# 🟢 Lokale LLMs mit RAG
+* RAG – Retrieval Augmented Generation:
+    * Reduzierung von Halluzinationen
+    * Zitierfähigkeit von Quellen
+    * Besonders relevant im rechtlichen Kontext
+* Einsatz lokaler Sprachmodelle
+* Vorteil: Daten verlassen das Unternehmen nicht
+* Hohe Datensicherheit
+
+* Mögliche Anwendung:
+  * Unterstützung im Genehmigungsmanagement
+  * Schnellere Suche nach Normen und Gesetzen
+  * Unterstützung bei der Programmierarbeit
+
+---
+
+# 🟢 Screenshot – LLM-Chat
+
+* Klassische Chat-Oberfläche
+* Aktuell noch ohne RAG-Anbindung
+* Testumgebung zur Evaluierung
+* Vergleichbar mit bekannten Cloud-LLMs
+* Ziel: spätere Integration in interne Systeme
+
+---
+
+# 🟢 Projekt 2 – Bildsuche mit CLIP
+
+* CLIP = Contrastive Language–Image Pretraining
+* Gemeinsamer Vektorraum für Text und Bild
+* Umwandlung von Bildern in mathematische Vektoren
+* Umwandlung von Suchbegriffen ebenfalls in Vektoren
+* Ähnlichkeitssuche im Vektorraum
+* Ausgabe der Top-10 passendsten Bilder
+
+Beispiel:
+
+* Suchbegriff: „Talsperre“
+* Top-Treffer korrekt erkannt
+
+
+* Interne Liste mit ca. 600 Begriffen
+* Modell prüft für jeden Begriff:
+  * Ist dieses Objekt im Bild enthalten?
+
+* Ausgabe der erkannten Objekte
+* Beispiel-Erkennung:
+  * Staumauer
+  * Wasserkraftwerk
+  * Gewichtsmauer
+  * Staumauerkrone
+  * Bogenstaumauer
+
+---
+
+# 🟢 Herausforderungen
+
+* Bildnormalisierung erzeugt Verzerrung
+* Fehlklassifikationen möglich
+   * Beispiel: Gans wird auf Hundebild erkannt
+* Auseinandersetzung mit:
+   * Trainingsdaten
+   * Modellarchitektur
+   * Fine-Tuning
+* Ziel: Anpassung an fachspezifische Anwendungsbereiche
+
+---
+
+# 🟢 Abschluss
+* Soweit zu meiner Tätigkeit bei G.E.O.S.
+* Vielen Dank für Ihre Aufmerksamkeit!
+
+
