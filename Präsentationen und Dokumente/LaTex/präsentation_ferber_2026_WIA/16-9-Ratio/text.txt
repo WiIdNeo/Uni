@@ -82,7 +82,6 @@
 
 # 🟢 Screenshot – LLM-Chat
 
-
 * Klassische Chat-Oberfläche
 * Vergleichbar mit bekannten Cloud-LLMs
 * allerdings offline bzw auf Unternehmensinternem-Server
