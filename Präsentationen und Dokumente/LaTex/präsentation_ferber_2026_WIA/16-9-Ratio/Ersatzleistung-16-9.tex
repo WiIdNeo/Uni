@@ -5,6 +5,7 @@
 % ---------------------------------------------------------
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage[percent]{overpic}
 
 % ---------------------------------------------------------
 % FARBEN
@@ -62,6 +63,8 @@
       \vspace{0.1cm}
       \hbox to \paperwidth{
         \hspace{0.3cm}\insertshorttitle
+        \centering
+        
         \hfill
         \insertframenumber\hspace{0.3cm}
       }
@@ -80,7 +83,7 @@
 % ---------------------------------------------------------
 % TITELINFOS
 % ---------------------------------------------------------
-\title[Vorstellung]{Vorstellung: Firma, Bereich und Tätigkeit}
+\title[Vorstellung: Praxispartner und Tätigkeitsbereich]{Vorstellung: Praxispartner und Tätigkeitsbereich}
 \author{Colin Hanschmann}
 \date{25. Februar 2026}
 
@@ -150,7 +153,7 @@
  
   \item Schwerpunkte:
   \begin{itemize}
-    \item Bergbauschließung \& Sanierung
+    \item Bergbauschließung \& -sanierung
     \item Strahlenschutz
     \item Geoinformatik
     \item Umweltmonitoring
@@ -189,18 +192,29 @@
         \item Daten-Monitoring
         \item 3D-Modelle
       \end{itemize}
-      \item Installation und Konfiguaration \\der Software- und Serverinfrastruktur
+      \item Installation und Konfiguration \\der Software- und Serverinfrastruktur
       \item Schulung an den Produkten
     \end{itemize}
   \end{column}
 
   \hspace{-1.1cm}
   \begin{column}{0.4\textwidth}
-    \includegraphics[width=\linewidth,height=0.45\textheight,keepaspectratio]{3d-modell.png}
-    \tiny \\AL.VIS Objects (Closed Source Firmenprodukt)
+    \includegraphics[width=\linewidth,height=0.7\textheight,keepaspectratio]{alvis-logo-100.png}
+
   \end{column}
 \end{columns}
 
+\end{frame}
+
+\begin{frame}
+  
+  \vspace{1cm}
+\begin{figure}
+  \hspace{-2cm}
+\begin{overpic}[width=0.7\textwidth]{objects_1.png}
+    \put(50,17){\includegraphics[width=0.5\textwidth]{timeseries_2.png}}
+\end{overpic}
+\end{figure}
 \end{frame}
 
 
@@ -212,14 +226,14 @@
 
 \begin{frame}
 \begin{itemize}
-  \item RAG-Systeme für Rechtssichere Anfragen
+  \item RAG-Systeme
   \item lokale KI für Datensicherheit
   \item Bildsuche mithilfe von CLIP
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Lokal LLM-Chat}
+\frametitle{Lokaler LLM-Chat}
 \centering
     \includegraphics[width=0.75\textwidth,keepaspectratio]{LLM-Chat.png}%
 \end{frame}
