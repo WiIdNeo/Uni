@@ -5,7 +5,7 @@
 #### Allgemeine KI
 ### LLMs
 ## Agentic AI
-### Grundlagen und Vergleich zu normalen LLMs
+### Grundlagen und Vergleich zu Assistenten
 #### Entwicklung
 ### Aktueller Stand
 #### Anwendungsbereiche
